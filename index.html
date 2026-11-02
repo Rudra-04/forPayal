@@ -126,7 +126,7 @@ function win(){
   h.style.left=Math.random()*95+'vw';h.style.fontSize=(16+Math.random()*24)+'px';
   document.body.appendChild(h);setTimeout(function(){h.remove()},4200)},i*120)})(i)}
 }
-(function(){var a=$('amb'),e=['❤️','💖','💕','🌹','✨'];function mk(){var d=document.createElement('div');d.className='fl';d.textContent=e[Math.floor(Math.random()*e.length)];d.style.left=Math.random()*96+'vw';d.style.fontSize=(12+Math.random()*22)+'px';d.style.animation='up '+(7+Math.random()*7)+'s linear forwards';a.appendChild(d);setTimeout(function(){d.remove()},15000)}setInterval(mk,700);for(var i=0;i<8;i++)mk()})();
+(function(){var a=$('amb'),e=['❤️','💖','💕','🌹','✨'];function mk(){var d=document.createElement('div');d.className='fl';d.textContent=e[Math.floor(Math.random()*e.length)];d.style.left=Math.random()*96+'vw';d.style.fontSize=(12+Math.random()*22)+'px';d.style.animation='up '+(7+Math.random()*7)+'s linear forwards';a.appendChild(d);setTimeout(function(){d.remove()},15000)}setInterval(mk,2500);for(var i=0;i<8;i++)mk()})();
 $('yes').onclick=function(){mode='yes';startPuzzle()};
 $('no').onclick=function(){mode='no';show('nomsg')};
 $('cont').onclick=function(){show('q')};
@@ -134,7 +134,7 @@ $('retry').onclick=startPuzzle;
 function shower(n,ms){var e=['❤️','💖','🌹','🌸','💐','🌷','💕','🌺'];for(var i=0;i<n;i++){(function(i){setTimeout(function(){var d=document.createElement('div');d.className='fall';d.textContent=e[Math.floor(Math.random()*e.length)];d.style.left=Math.random()*96+'vw';d.style.fontSize=(18+Math.random()*26)+'px';d.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(d);setTimeout(function(){d.remove()},6500)},i*(ms/n))})(i)}}
 $('ok').onclick=function(){document.body.classList.add('t2');shower(70,5000);show('ring')};
 $('rg').onclick=function(){this.classList.add('on');$('rt').textContent='It looks perfect on you ✨'};
-$('ryes').onclick=function(){$('fimg').style.backgroundImage='url("'+IMG+'")';shower(90,6000);show('fin')};
+$('ryes').onclick=function(){$('fimg').style.backgroundImage='url("'+IMG+'")';shower(25,6000);show('fin')};
 $('rno').onclick=function(){show('nomsg2')};
 $('back').onclick=function(){show('ring')};
 </script></body></html>
